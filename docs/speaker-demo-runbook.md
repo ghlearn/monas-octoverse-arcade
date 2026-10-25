@@ -120,7 +120,7 @@ Open the Mona's Octoverse Arcade canvas
 After the demo, finish the kickoff:
 
 1. **Show the starter prompt** on the attendee site, and remind teams that it sets the baseline, not the limit.
-2. **Form teams:** 4–6 people per team, aiming for 5. Groups with fewer than 4 people join another group. Groups with more than 6 split.
+2. **Form teams:** exactly 6 people per team, no smaller or larger teams. Plan attendance in multiples of 6; 150 participants form 25 teams with 25 submissions. Groups with fewer than 6 people join another group. Groups with more than 6 split into teams of exactly 6.
 3. **Choose a team name** before the starter install block begins at 0:15.
 4. **Show the rubric** (25 points) and the three judge-selected awards: Overall Winner, Best Design, and Most Fun. There is no audience vote.
 5. **Share the Discussion link** and the 2:00 submission deadline.
