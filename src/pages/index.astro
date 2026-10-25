@@ -34,7 +34,7 @@ const spins = [
 ];
 
 const teamRules = [
-  { value: '4–6', title: 'People per team', text: 'Minimum 4, maximum 6. Aim for 5.' },
+  { value: '6', title: 'People per team', text: 'Exactly 6 people per team: no smaller or larger teams.' },
   { value: 'Name', title: 'Choose a team name', text: 'Pick it during kickoff. You’ll use it on your submission.' },
   { value: '1', title: 'Shared repository', text: 'Keep your team’s extension in one repository that judges can open.' },
 ];
@@ -50,7 +50,7 @@ const prompt =
   'Build a Copilot App canvas extension called Mona’s Octoverse Arcade. Start from the provided canvas starter template. Inside the canvas, create a game where Mona the Octocat collects green commit-squares while dodging red bugs. Track the score, increase speed over time, and show a game-over screen with a restart button. Copilot appears as a sidekick that gives an encouraging tip every 10 points. The extension must install cleanly and open as a playable canvas. Keep it to HTML/CSS/vanilla JS inside the canvas — no external build step.';
 
 const agenda = [
-  { time: '0:00–0:15', minutes: 15, phase: 'Kickoff & teams', detail: 'See the target canvas extension, get the starter prompt and rubric, form teams of 4–6, and choose a team name.' },
+  { time: '0:00–0:15', minutes: 15, phase: 'Kickoff & teams', detail: 'See the target canvas extension, get the starter prompt and rubric, form teams of exactly 6, and choose a team name.' },
   { time: '0:15–0:25', minutes: 10, phase: 'Install the starter', detail: 'Every team installs and opens the starter canvas template — confirm it runs.' },
   { time: '0:25–1:15', minutes: 50, phase: 'Build your game', detail: 'Start from the prompt, then build your team’s version inside the canvas with the Copilot App.' },
   { time: '1:15–1:35', minutes: 20, phase: 'Power-up', detail: 'Pick a “power-up” stretch goal: leaderboard, sound, animation, theming, or your own idea.' },
@@ -125,7 +125,7 @@ const themes = [
           </p>
           <ul class="stats" aria-label="At a glance">
             <li><span class="stat-num">2</span><span class="stat-label">hours</span></li>
-            <li><span class="stat-num">4–6</span><span class="stat-label">people per team</span></li>
+            <li><span class="stat-num">6</span><span class="stat-label">people per team, exactly</span></li>
             <li><span class="stat-num">25</span><span class="stat-label">rubric points</span></li>
             <li><span class="stat-num">3</span><span class="stat-label">award categories</span></li>
           </ul>
@@ -191,8 +191,8 @@ const themes = [
         <p class="kicker">02 · Teams</p>
         <h2 id="teams-title">Build as a team</h2>
         <p class="section-intro">
-          Up to 150 people may take part, so everyone builds in a team. Form your team and choose a team name during
-          kickoff.
+          Up to 150 people may take part. Plan attendance in multiples of 6 so everyone can join a complete team.
+          Form your team of exactly 6 and choose a team name during kickoff.
         </p>
         <ul class="team-grid">
           {teamRules.map((t) => (
@@ -205,9 +205,9 @@ const themes = [
         </ul>
         <div class="callout">
           <p>
-            <strong>Planning numbers:</strong> with 150 participants, teams of 5 make about 30 teams (25–38, depending on
-            team size). If your group has fewer than 4 people, join another group. If it has more than 6, split into two
-            teams.
+            <strong>Planning numbers:</strong> with 150 participants, form 25 teams of 6, for 25 team submissions.
+            If your group has fewer than 6 people, join another group. If it has more than 6, split into teams of
+            exactly 6.
           </p>
         </div>
       </div>
