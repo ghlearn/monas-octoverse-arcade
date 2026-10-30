@@ -10,6 +10,8 @@ This repository holds the attendee guide for the workshop. It has two parts:
 
 The site is only an attendee guide. It is not the game. Participants build the game themselves during the workshop.
 
+**Workshop links:** [Instructions](https://gh.io/dol-instructions) · [Discussion and submissions](https://gh.io/dol-discussion). The site's **Workshop links** section includes both clickable links and their supplied QR codes.
+
 > **Note:** This is an independent workshop resource. It is **not** an official GitHub Universe or GitHub event website and is not endorsed by GitHub. GitHub, GitHub Copilot, and the Octocat are trademarks of GitHub, Inc. Supplied GitHub artwork is displayed unaltered. Universe event details within the artwork are not the workshop's event details. Public-facing mascot use requires approval from GitHub's Brand & Marketing Design team under the [mascot guidelines](https://brand.github.com/graphic-elements/mascots).
 
 ---
@@ -67,7 +69,7 @@ Start from the **working canvas starter included in the challenge template** at 
 
 ## 📮 Submitting
 
-Before the workshop ends at 2:00, one teammate posts your team's submission as a single comment in the challenge Discussion. Your facilitator will share the link. Include:
+Before the workshop ends at 2:00, one teammate posts your team's submission as a single comment in the [challenge Discussion](https://gh.io/dol-discussion). Include:
 
 1. **Team name**: the name your team chose at kickoff.
 2. **Description**: a few sentences about your game, your creative spin, and your power-up.
@@ -178,6 +180,8 @@ The page loads no remote images, fonts, or scripts at runtime. The only JavaScri
 ├── public/
 │   ├── favicon.svg           # Neutral arcade icon, not a mascot or GitHub logo
 │   └── images/
+│       ├── dol-instructions.png # Supplied instructions QR code
+│       ├── dol-discussion.png   # Supplied Discussion QR code
 │       ├── arcade-hero.png   # Supplied Mona and green-block landscape
 │       ├── mona-clouds.png   # Supplied Mona and butterfly illustration
 │       ├── universe-2026.png # Supplied Universe event artwork, displayed intact

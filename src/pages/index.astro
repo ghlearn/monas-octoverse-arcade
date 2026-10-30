@@ -8,6 +8,7 @@ const description =
   'Attendee guide for the GitHub Day of Learning 2-hour workshop game challenge: build Mona’s Octoverse Arcade as a Copilot App canvas extension.';
 
 const nav = [
+  { href: '#workshop-links', label: 'Workshop links' },
   { href: '#prompt', label: 'Prompt' },
   { href: '#teams', label: 'Teams' },
   { href: '#canvas', label: 'Canvas extension' },
@@ -17,6 +18,23 @@ const nav = [
   { href: '#awards', label: 'Awards' },
   { href: '#principles', label: 'Principles' },
   { href: '#themes', label: 'Future ideas' },
+];
+
+const workshopLinks = [
+  {
+    title: 'Instructions',
+    id: 'instructions-link',
+    url: 'https://gh.io/dol-instructions',
+    image: 'dol-instructions.png',
+    text: 'Follow the setup steps and challenge instructions to get your team ready.',
+  },
+  {
+    title: 'Discussion',
+    id: 'discussion-link',
+    url: 'https://gh.io/dol-discussion',
+    image: 'dol-discussion.png',
+    text: 'Post your team’s submission and see the other teams’ games.',
+  },
 ];
 
 const baseline = [
@@ -144,6 +162,32 @@ const themes = [
             alt="Mona perched on green blocks beneath a white sprout, surrounded by pastel clouds and a blue sky."
           />
         </figure>
+      </div>
+    </section>
+
+    <section id="workshop-links" class="section section-alt" aria-labelledby="workshop-links-title">
+      <div class="container">
+        <p class="kicker">Workshop links</p>
+        <h2 id="workshop-links-title">Get started. Share your game.</h2>
+        <p class="section-intro">Open a link below or scan its QR code on another device.</p>
+        <div class="resource-grid">
+          {workshopLinks.map((resource) => (
+            <a class="resource-link" href={resource.url} aria-labelledby={resource.id}>
+              <article class="card resource-card">
+                <img
+                  src={`${base}images/${resource.image}`}
+                  width="800"
+                  height="800"
+                  loading="lazy"
+                  alt={`QR code for ${resource.url}`}
+                />
+                <h3 id={resource.id}>{resource.title}</h3>
+                <p>{resource.text}</p>
+                <span class="resource-url">{resource.url.replace('https://', '')}</span>
+              </article>
+            </a>
+          ))}
+        </div>
       </div>
     </section>
 
@@ -291,7 +335,7 @@ const themes = [
         <h2 id="submit-title">Submit in the challenge Discussion</h2>
         <p class="section-intro">
           Before the workshop ends at 2:00, one teammate posts your team’s submission as a single comment in the
-          challenge Discussion. Your facilitator will share the link. Include:
+          <a href="https://gh.io/dol-discussion">challenge Discussion</a>. Include:
         </p>
         <ol class="req-list submit-list">
           {submission.map((item, i) => (
