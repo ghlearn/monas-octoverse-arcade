@@ -978,52 +978,6 @@ p {
   color: #d1d7e0;
 }
 
-.arcade-showcase .container {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  align-items: center;
-  gap: 3rem;
-}
-
-.showcase-heading .section-intro {
-  max-width: 28rem;
-  margin-bottom: 0;
-}
-
-.artwork-grid {
-  display: grid;
-  gap: 1.5rem;
-}
-
-.artwork-panel {
-  margin: 0;
-  overflow: hidden;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  background: var(--surface);
-}
-
-.artwork-panel > img {
-  width: 100%;
-}
-
-.artwork-panel figcaption {
-  padding: 1rem 1.25rem;
-  color: var(--muted);
-  font-size: 0.85rem;
-}
-
-.artwork-pattern {
-  border-top: 1px solid var(--border);
-}
-
-@media (max-width: 860px) {
-  .arcade-showcase .container {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 2rem;
-  }
-}
-
 /* Footer */
 .site-footer {
   border-top: 1px solid var(--border);

@@ -207,9 +207,6 @@ The page loads no remote images, fonts, or scripts at runtime. The only JavaScri
 │       ├── dol-instructions.png # Supplied instructions QR code
 │       ├── dol-discussion.png   # Supplied Discussion QR code
 │       ├── arcade-hero.png   # Supplied Mona and green-block landscape
-│       ├── mona-clouds.png   # Supplied Mona and butterfly illustration
-│       ├── pattern-green-pink.png # Not currently displayed
-│       ├── pattern-gold-orange.png
 │       └── hero-arcade.svg   # Previous artwork, no longer displayed
 └── src/
     ├── layouts/
@@ -223,7 +220,7 @@ The page loads no remote images, fonts, or scripts at runtime. The only JavaScri
 ### Design and accessibility notes
 
 - Neutral ink and charcoal surfaces, GitHub green (`#0FBF3E`) as the primary accent, and restrained Copilot purple, following the [GitHub Brand Toolkit](https://brand.github.com/foundations/color). Bright secondary colors stay primarily in the supplied artwork.
-- The five supplied images are displayed without recoloring, cropping, overlaid text, or altered event lockups. The main landscape introduces the challenge; the two supporting illustrations and geometric patterns form an inspiration gallery.
+- The main Mona landscape and workshop QR codes are displayed without recoloring, cropping, or overlaid text. The closing section is text-only, with no artwork gallery.
 - Mascots illustrate the creative challenge, rather than serving as the site's logo or explaining instructions. Public-facing mascot use still requires GitHub Brand approval.
 - The page uses semantic HTML landmarks, headings, tables, and lists, plus a skip link.
 - The navigation is keyboard-accessible, and focus states are visible.
