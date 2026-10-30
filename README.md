@@ -22,7 +22,7 @@ Teams build a browser game starring **Mona** the Octocat as the hero and **Copil
 
 Every team starts with this prompt in the Copilot App. It sets the baseline, not the limit.
 
-> "Build a Copilot App **canvas extension** called *Mona's Octoverse Arcade*. Start from the provided canvas starter template. Inside the canvas, create a game where Mona the Octocat collects green commit-squares while dodging red bugs. Track the score, increase speed over time, and show a game-over screen with a restart button. Copilot appears as a sidekick that gives an encouraging tip every 10 points. The extension must install cleanly and open as a playable canvas. Keep it to HTML/CSS/vanilla JS inside the canvas — no external build step."
+> "In the Mona's Octoverse Arcade starter canvas already included in this repository, build the game described here. Keep the existing extension registration in `extension.mjs`; implement the game in `game.html` with HTML, CSS, and vanilla JavaScript, with no external build step. Make a game where Mona the Octocat collects green commit-squares while dodging red bugs. Track the score, increase speed over time, and show a game-over screen with a restart button. Copilot appears as a sidekick that gives an encouraging tip every 10 points. Make sure the canvas still opens and the game is playable."
 
 **The baseline:** Mona collects green commit squares and dodges red bugs. The score is tracked, and the speed increases over time. A game-over screen has a restart button. Copilot cheers you on with a tip every 10 points.
 
@@ -51,16 +51,16 @@ The game can't be a loose HTML file. It must be a **Copilot canvas extension** t
 2. Can be **installed** into the Copilot App, either with `install_extension` from a GitHub gist or repo folder, or by dropping the folder into the extensions directory.
 3. **Runs** when the agent opens it with `open_canvas`. The game renders in the side panel and is playable.
 
-Start from the **provided canvas starter template**. Build the game UI with HTML, CSS, and vanilla JavaScript inside the canvas. Don't add an external build step.
+Start from the **working canvas starter included in the challenge template** at `.github/extensions/monas-octoverse-arcade-starter/`. Create your team's repository from the [challenge template](https://github.com/ghlearn/day-of-learning-challenge), open it as a Copilot App Project, and start a session there. The project-scoped extension is discovered from the repository. Ask Copilot to open the **Mona's Octoverse Arcade starter** canvas and confirm its welcome-screen button responds. Then build the game in `game.html`; keep the canvas registration in `extension.mjs`. The starter contains no gameplay, so the baseline game and creative choices are the team's work. Use HTML, CSS, and vanilla JavaScript inside the canvas. Don't add an external build step.
 
-**Why this raises the bar (in a good way):** participants learn the real extension model (manifest, canvas registration, install, and launch), not just front-end code. This is the "GitHub twist" that makes the challenge platform-native.
+**Why this raises the bar (in a good way):** participants start with working canvas registration and serving, then build the game itself. They learn how the extension runs in the Copilot App without losing workshop time to setup friction. This is the "GitHub twist" that makes the challenge platform-native.
 
 ## ⏱️ Suggested workshop structure (2 hours)
 
 | Time | Phase |
 | --- | --- |
 | **0:00–0:15** | Kickoff & teams: see the target canvas extension, get the starter prompt and rubric, form teams of exactly 6, and choose a team name |
-| **0:15–0:25** | Every team installs & opens the **starter canvas template** (confirm it runs) |
+| **0:15–0:25** | Every team opens its repository as a Copilot App Project, then opens and verifies the **included starter canvas** |
 | **0:25–1:15** | Start from the prompt, then build your team's version inside the canvas with the Copilot App |
 | **1:15–1:35** | Pick a "power-up" stretch goal (leaderboard, sound, animation, theming, or your own idea) |
 | **1:35–2:00** | **Record & submit:** record a demo video of up to 90 seconds and post your submission in the challenge Discussion 🏆 |
