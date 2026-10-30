@@ -12,9 +12,25 @@ The site is only an attendee guide. It is not the game. Participants build the g
 
 **Workshop links:** [Instructions](https://gh.io/dol-instructions) · [Discussion and submissions](https://gh.io/dol-discussion). The site's **Workshop links** section includes both clickable links and their supplied QR codes.
 
+The [challenge README](https://github.com/ghlearn/day-of-learning-challenge/blob/main/README.md) is the source of truth for the shared prompt and challenge rules. This attendee guide and the Discussion follow the same guidance.
+
 > **Note:** This is an independent workshop resource. It is **not** an official GitHub Universe or GitHub event website and is not endorsed by GitHub. GitHub, GitHub Copilot, and the Octocat are trademarks of GitHub, Inc. Supplied GitHub artwork is displayed unaltered. Universe event details within the artwork are not the workshop's event details. Public-facing mascot use requires approval from GitHub's Brand & Marketing Design team under the [mascot guidelines](https://brand.github.com/graphic-elements/mascots).
 
 ---
+
+## Prerequisites, login, and add project to the Copilot app
+
+1. **Install the GitHub Copilot app.** Download and install it from [github.com/features/copilot](https://github.com/features/copilot).
+2. **Log in with your provided lab account.** Open the GitHub Copilot app and sign in using the **GitHub Hands-on Labs** account provided to you, rather than your personal GitHub account. The lab environment already has a repository set up for your team, ready to add as a Project. Use that repository rather than creating another one.
+
+> [!NOTE]
+> All team members should be able to log in with the one account provided to work on the repository, or you can have one teammate make the changes.
+
+3. **Add your team's repository as a Project in the GitHub Copilot app.** In the app's sidebar, open **Projects** and create a new **Project** named for your team. Select the repository already set up in your GitHub Hands-on Labs environment, not the original `ghlearn/day-of-learning-challenge` template or this attendee-guide repository. Wait for the Project to report that it is ready.
+
+   In the **Project** chat, ask Copilot to start a coding session in your team's repository and open the **Mona's Octoverse Arcade starter** canvas. Confirm its welcome screen appears and its button responds before building. The project-scoped extension is already included; no separate starter download is needed.
+
+Commit and push your team's extension changes so the submitted repository contains the version shown in your demo.
 
 ## 🏆 The challenge
 
@@ -24,7 +40,7 @@ Teams build a browser game starring **Mona** the Octocat as the hero and **Copil
 
 Every team starts with this prompt in the Copilot App. It sets the baseline, not the limit.
 
-> "In the Mona's Octoverse Arcade starter canvas already included in this repository, build the game described here. Keep the existing extension registration in `extension.mjs`; implement the game in `game.html` with HTML, CSS, and vanilla JavaScript, with no external build step. Make a game where Mona the Octocat collects green commit-squares while dodging red bugs. Track the score, increase speed over time, and show a game-over screen with a restart button. Copilot appears as a sidekick that gives an encouraging tip every 10 points. Make sure the canvas still opens and the game is playable."
+> In the Mona's Octoverse Arcade starter canvas already included in your team's challenge repository, build the game described here. Keep the existing extension registration in extension.mjs; implement the game in game.html with HTML, CSS, and vanilla JavaScript, with no external build step. Make a game where Mona the Octocat collects green commit-squares while dodging red bugs. Track the score, increase speed over time, and show a game-over screen with a restart button. Copilot appears as a sidekick that gives an encouraging tip every 10 points. Make sure the canvas still opens and the game is playable.
 
 **The baseline:** Mona collects green commit squares and dodges red bugs. The score is tracked, and the speed increases over time. A game-over screen has a restart button. Copilot cheers you on with a tip every 10 points.
 
@@ -53,28 +69,34 @@ The game can't be a loose HTML file. It must be a **Copilot canvas extension** t
 2. Can be **installed** into the Copilot App, either with `install_extension` from a GitHub gist or repo folder, or by dropping the folder into the extensions directory.
 3. **Runs** when the agent opens it with `open_canvas`. The game renders in the side panel and is playable.
 
-Start from the **working canvas starter included in the challenge template** at `.github/extensions/monas-octoverse-arcade-starter/`. Create your team's repository from the [challenge template](https://github.com/ghlearn/day-of-learning-challenge), open it as a Copilot App Project, and start a session there. The project-scoped extension is discovered from the repository. Ask Copilot to open the **Mona's Octoverse Arcade starter** canvas and confirm its welcome-screen button responds. Then build the game in `game.html`; keep the canvas registration in `extension.mjs`. The starter contains no gameplay, so the baseline game and creative choices are the team's work. Use HTML, CSS, and vanilla JavaScript inside the canvas. Don't add an external build step.
+Start from the **working canvas starter already included in your team's lab repository** at `.github/extensions/monas-octoverse-arcade-starter/`. Open that repository as a Copilot App Project and start a coding session there. The project-scoped extension is discovered from the repository. Ask Copilot to open the **Mona's Octoverse Arcade starter** canvas and confirm its welcome-screen button responds. Then build the game in `game.html`; keep the canvas registration in `extension.mjs`. The starter contains no gameplay, so the baseline game and creative choices are the team's work. Use HTML, CSS, and vanilla JavaScript inside the canvas. Keep the game self-contained: no package manifest, dependencies, external assets, or external build step.
+
+**Loading is the setup step:** opening your team's repository as a Project loads the included project-scoped extension. You do not need a separate starter download or to reinstall it for the demo. The installation options above are for trying the extension in another environment.
 
 **Why this raises the bar (in a good way):** participants start with working canvas registration and serving, then build the game itself. They learn how the extension runs in the Copilot App without losing workshop time to setup friction. This is the "GitHub twist" that makes the challenge platform-native.
 
 ## ⏱️ Suggested workshop structure (2 hours)
 
+All times below are elapsed from the start of the workshop, not times of day. Install the app and log in before kickoff.
+
 | Time | Phase |
 | --- | --- |
 | **0:00–0:15** | Kickoff & teams: see the target canvas extension, get the starter prompt and rubric, form teams of exactly 6, and choose a team name |
-| **0:15–0:25** | Every team opens its repository as a Copilot App Project, then opens and verifies the **included starter canvas** |
+| **0:15–0:25** | Add the pre-provisioned lab repository as a Copilot App Project, open the **included starter canvas**, and confirm its button responds |
 | **0:25–1:15** | Start from the prompt, then build your team's version inside the canvas with the Copilot App |
 | **1:15–1:35** | Pick a "power-up" stretch goal (leaderboard, sound, animation, theming, or your own idea) |
 | **1:35–2:00** | **Record & submit:** record a demo video of up to 90 seconds and post your submission in the challenge Discussion 🏆 |
 
 ## 📮 Submitting
 
-Before the workshop ends at 2:00, one teammate posts your team's submission as a single comment in the [challenge Discussion](https://gh.io/dol-discussion). Include:
+Before the end of the **two-hour workshop**, one teammate posts your team's submission as a **single comment** in the [challenge Discussion](https://gh.io/dol-discussion). Do not submit in a separate Discussion in your team's repository. Include:
 
 1. **Team name**: the name your team chose at kickoff.
 2. **Description**: a few sentences about your game, your creative spin, and your power-up.
-3. **Demo video**: up to 90 seconds. Install the extension, open it as a canvas, and play. Attach the video to your comment or add a link.
-4. **Repository link**: the repository that contains your extension folder. Make sure the judges can access it.
+3. **Demo video**: up to **90 seconds**. Show your team's repository open as a Project with the included extension loaded, open the canvas, and play the game. No separate reinstallation is required. Attach the video to your comment or add a link that judges can access.
+4. **Repository link**: your team's repository containing the extension folder. Make sure judges can access it and that your changes are pushed.
+
+The repository must contain the version shown in your demo. Keep any lab credentials out of your video and submission. Use the [submission template in the Discussion](https://gh.io/dol-discussion) to include all four items.
 
 ## 🥇 Judging and picking a winner
 
@@ -124,6 +146,8 @@ Inspiration for after the workshop — not submissions for this competition. Eve
 ---
 
 ## 🖥️ Running the attendee website
+
+This section is for website maintainers, not for building the challenge game. Attendees use the included canvas starter; they do not need Node.js, npm, or a website build step for the game.
 
 ### Prerequisites
 

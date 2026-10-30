@@ -561,6 +561,21 @@ p {
   margin: 0;
 }
 
+.setup-list {
+  padding-left: 1.5rem;
+}
+
+.setup-list > li + li,
+.section-followup {
+  margin-top: 1.5rem;
+}
+
+.setup-list code,
+.callout code {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
 .callout-purple {
   border-color: rgb(163 113 247 / 0.55);
   background: rgb(42 26 74 / 0.6);
