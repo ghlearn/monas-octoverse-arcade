@@ -47,11 +47,11 @@ const submission = [
 ];
 
 const prompt =
-  'Build a Copilot App canvas extension called Mona’s Octoverse Arcade. Start from the provided canvas starter template. Inside the canvas, create a game where Mona the Octocat collects green commit-squares while dodging red bugs. Track the score, increase speed over time, and show a game-over screen with a restart button. Copilot appears as a sidekick that gives an encouraging tip every 10 points. The extension must install cleanly and open as a playable canvas. Keep it to HTML/CSS/vanilla JS inside the canvas — no external build step.';
+  'In the Mona’s Octoverse Arcade starter canvas already included in your team’s challenge repository, build the game described here. Keep the existing extension registration in extension.mjs; implement the game in game.html with HTML, CSS, and vanilla JavaScript, with no external build step. Make a game where Mona the Octocat collects green commit-squares while dodging red bugs. Track the score, increase speed over time, and show a game-over screen with a restart button. Copilot appears as a sidekick that gives an encouraging tip every 10 points. Make sure the canvas still opens and the game is playable.';
 
 const agenda = [
   { time: '0:00–0:15', minutes: 15, phase: 'Kickoff & teams', detail: 'See the target canvas extension, get the starter prompt and rubric, form teams of exactly 6, and choose a team name.' },
-  { time: '0:15–0:25', minutes: 10, phase: 'Install the starter', detail: 'Every team installs and opens the starter canvas template — confirm it runs.' },
+  { time: '0:15–0:25', minutes: 10, phase: 'Open the starter', detail: 'Create the team repository from the challenge template, open it as a Copilot App Project, then open the included starter canvas and confirm its button responds.' },
   { time: '0:25–1:15', minutes: 50, phase: 'Build your game', detail: 'Start from the prompt, then build your team’s version inside the canvas with the Copilot App.' },
   { time: '1:15–1:35', minutes: 20, phase: 'Power-up', detail: 'Pick a “power-up” stretch goal: leaderboard, sound, animation, theming, or your own idea.' },
   { time: '1:35–2:00', minutes: 25, phase: 'Record & submit', detail: 'Record a demo video of up to 90 seconds and post your submission in the challenge Discussion before the workshop ends. 🏆' },
@@ -251,10 +251,14 @@ const themes = [
         </ol>
         <div class="callout">
           <p>
-            <strong>Start from the provided canvas starter template.</strong> Build the game UI with HTML, CSS, and
-            vanilla JavaScript inside the canvas — no external build step. You’ll learn the real extension model:
-            manifest, canvas registration, install, and launch. That’s the “GitHub twist” that makes the challenge
-            platform-native.
+            <strong>The challenge template includes the working canvas starter.</strong> Create your team repository
+            from the <a href="https://github.com/ghlearn/day-of-learning-challenge">challenge template</a>, open that
+            repository as a Copilot App Project, and start a session there. The extension in
+            <code>.github/extensions/monas-octoverse-arcade-starter/</code> is discovered from the project. Ask
+            <em>“Open the Mona's Octoverse Arcade starter canvas.”</em> Its welcome screen and button confirm the
+            canvas is running; it contains no finished game. Then build in <code>game.html</code>, keeping the
+            registration in <code>extension.mjs</code>. Use HTML, CSS, and vanilla JavaScript with no external build
+            step, so your team can focus on the game rather than wiring up the canvas.
           </p>
         </div>
       </div>

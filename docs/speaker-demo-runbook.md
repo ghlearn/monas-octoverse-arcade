@@ -143,7 +143,7 @@ After the demo, finish the kickoff:
 
 | Time | Your cue |
 | --- | --- |
-| **0:15** | Teams should be named and installing the starter template. |
+| **0:15** | Teams should be named, in their shared Copilot App Projects, and opening the included starter canvas. |
 | **1:15** | Announce the power-up block. |
 | **1:35** | Announce record and submit, and share the Discussion link again. |
 | **1:50** | Give a 10-minute warning. |
