@@ -143,6 +143,12 @@ Inspiration for after the workshop — not submissions for this competition. Eve
 | **PR Review Simulator** | Card-swipe game (approve/request changes) | Learn code-review etiquette; Mona is the author, Copilot the reviewer |
 | **Mona's Sticker Maker** | Canvas drawing + Octocat generator | Compose your own Octocat; export as PNG |
 
+## Learn by doing with GitHub Skills
+
+GitHub Skills offers free, hands-on courses you complete in public GitHub repositories. Follow step-by-step guidance and get automated feedback as you learn.
+
+Keep learning at [gh.io/gh-skills](https://gh.io/gh-skills). The site's **Learn by doing with GitHub Skills** section follows the future canvas ideas and includes this link and its supplied QR code.
+
 ---
 
 ## 🖥️ Running the attendee website
@@ -206,6 +212,7 @@ The page loads no remote images, fonts, or scripts at runtime. The only JavaScri
 │   └── images/
 │       ├── dol-instructions.png # Supplied instructions QR code
 │       ├── dol-discussion.png   # Supplied Discussion QR code
+│       ├── gh-skills.png        # Supplied GitHub Skills QR code
 │       ├── arcade-hero.png   # Supplied Mona and green-block landscape
 │       └── hero-arcade.svg   # Previous artwork, no longer displayed
 └── src/
@@ -220,7 +227,7 @@ The page loads no remote images, fonts, or scripts at runtime. The only JavaScri
 ### Design and accessibility notes
 
 - Neutral ink and charcoal surfaces, GitHub green (`#0FBF3E`) as the primary accent, and restrained Copilot purple, following the [GitHub Brand Toolkit](https://brand.github.com/foundations/color). Bright secondary colors stay primarily in the supplied artwork.
-- The main Mona landscape and workshop QR codes are displayed without recoloring, cropping, or overlaid text. The closing section is text-only, with no artwork gallery.
+- The main Mona landscape and all three supplied QR codes (Instructions, Discussion, and GitHub Skills) are displayed without recoloring, cropping, or overlaid text. The final "One Mona. Endless possibilities." section is text-only, with no artwork gallery.
 - Mascots illustrate the creative challenge, rather than serving as the site's logo or explaining instructions. Public-facing mascot use still requires GitHub Brand approval.
 - The page uses semantic HTML landmarks, headings, tables, and lists, plus a skip link.
 - The navigation is keyboard-accessible, and focus states are visible.
