@@ -9,6 +9,7 @@ const description =
 
 const nav = [
   { href: '#workshop-links', label: 'Workshop links' },
+  { href: '#setup', label: 'Setup' },
   { href: '#prompt', label: 'Prompt' },
   { href: '#teams', label: 'Teams' },
   { href: '#canvas', label: 'Canvas extension' },
@@ -60,16 +61,16 @@ const teamRules = [
 const submission = [
   { title: 'Team name', text: 'The name your team chose at kickoff.' },
   { title: 'Description', text: 'A few sentences about your game, your creative spin, and your power-up.' },
-  { title: 'Demo video', text: 'Up to 90 seconds. Install the extension, open it as a canvas, and play. Attach the video to your comment or add a link.' },
-  { title: 'Repository link', text: 'The repository that contains your extension folder. Make sure the judges can access it.' },
+  { title: 'Demo video', text: 'Up to 90 seconds. Show your team’s repository open as a Project with the included extension loaded, open the canvas, and play the game. No separate reinstallation is required. Attach the video or add a link that judges can access.' },
+  { title: 'Repository link', text: 'Your team’s repository containing the extension folder. Make sure judges can access it and that your changes are pushed.' },
 ];
 
 const prompt =
-  'In the Mona’s Octoverse Arcade starter canvas already included in your team’s challenge repository, build the game described here. Keep the existing extension registration in extension.mjs; implement the game in game.html with HTML, CSS, and vanilla JavaScript, with no external build step. Make a game where Mona the Octocat collects green commit-squares while dodging red bugs. Track the score, increase speed over time, and show a game-over screen with a restart button. Copilot appears as a sidekick that gives an encouraging tip every 10 points. Make sure the canvas still opens and the game is playable.';
+  "In the Mona's Octoverse Arcade starter canvas already included in your team's challenge repository, build the game described here. Keep the existing extension registration in extension.mjs; implement the game in game.html with HTML, CSS, and vanilla JavaScript, with no external build step. Make a game where Mona the Octocat collects green commit-squares while dodging red bugs. Track the score, increase speed over time, and show a game-over screen with a restart button. Copilot appears as a sidekick that gives an encouraging tip every 10 points. Make sure the canvas still opens and the game is playable.";
 
 const agenda = [
   { time: '0:00–0:15', minutes: 15, phase: 'Kickoff & teams', detail: 'See the target canvas extension, get the starter prompt and rubric, form teams of exactly 6, and choose a team name.' },
-  { time: '0:15–0:25', minutes: 10, phase: 'Open the starter', detail: 'Create the team repository from the challenge template, open it as a Copilot App Project, then open the included starter canvas and confirm its button responds.' },
+  { time: '0:15–0:25', minutes: 10, phase: 'Open the starter', detail: 'Add the pre-provisioned lab repository as a Copilot App Project, open the included starter canvas, and confirm its button responds.' },
   { time: '0:25–1:15', minutes: 50, phase: 'Build your game', detail: 'Start from the prompt, then build your team’s version inside the canvas with the Copilot App.' },
   { time: '1:15–1:35', minutes: 20, phase: 'Power-up', detail: 'Pick a “power-up” stretch goal: leaderboard, sound, animation, theming, or your own idea.' },
   { time: '1:35–2:00', minutes: 25, phase: 'Record & submit', detail: 'Record a demo video of up to 90 seconds and post your submission in the challenge Discussion before the workshop ends. 🏆' },
@@ -191,6 +192,45 @@ const themes = [
       </div>
     </section>
 
+    <section id="setup" class="section" aria-labelledby="setup-title">
+      <div class="container">
+        <p class="kicker">Before you build</p>
+        <h2 id="setup-title">Prerequisites, login, and add project to the Copilot app</h2>
+        <ol class="setup-list">
+          <li>
+            <p><strong>Install the GitHub Copilot app.</strong> Download and install it from{' '}
+              <a href="https://github.com/features/copilot">github.com/features/copilot</a>.</p>
+          </li>
+          <li>
+            <p><strong>Log in with your provided lab account.</strong> Open the app and sign in using the{' '}
+              <strong>GitHub Hands-on Labs</strong> account provided to you, rather than your personal GitHub account.
+              The lab environment already has a repository set up for your team, ready to add as a Project.
+              Use that repository rather than creating another one.</p>
+            <aside class="callout" aria-label="Shared lab account note">
+              <p><strong>Note:</strong> All team members should be able to log in with the one account provided
+                to work on the repository, or you can have one teammate make the changes.</p>
+            </aside>
+          </li>
+          <li>
+            <p><strong>Add your team's repository as a Project in the GitHub Copilot app.</strong>{' '}
+              In the app's sidebar, open <strong>Projects</strong> and create a new <strong>Project</strong>{' '}
+              named for your team. Select the repository already set up in your GitHub Hands-on Labs environment,
+              not the original <code>ghlearn/day-of-learning-challenge</code> template or this attendee-guide
+              repository. Wait for the Project to report that it is ready.</p>
+            <p>In the <strong>Project</strong> chat, ask Copilot to start a coding session in your team's repository
+              and open the <strong>Mona's Octoverse Arcade starter</strong> canvas. Confirm its welcome screen
+              appears and its button responds before building. The project-scoped extension is already included;
+              no separate starter download is needed.</p>
+          </li>
+        </ol>
+        <p>Commit and push your team's extension changes so the submitted repository contains the version shown
+          in your demo.</p>
+        <p>The <a href="https://github.com/ghlearn/day-of-learning-challenge/blob/main/README.md">challenge README</a>{' '}
+          is the source of truth for the shared prompt and challenge rules. This attendee guide and the Discussion
+          follow the same guidance.</p>
+      </div>
+    </section>
+
     <section id="prompt" class="section section-prompt" aria-labelledby="prompt-title">
       <div class="container">
         <p class="kicker">01 · Start here</p>
@@ -295,16 +335,19 @@ const themes = [
         </ol>
         <div class="callout">
           <p>
-            <strong>The challenge template includes the working canvas starter.</strong> Create your team repository
-            from the <a href="https://github.com/ghlearn/day-of-learning-challenge">challenge template</a>, open that
-            repository as a Copilot App Project, and start a session there. The extension in
-            <code>.github/extensions/monas-octoverse-arcade-starter/</code> is discovered from the project. Ask
+            <strong>Your team's lab repository already includes the working canvas starter.</strong> Open that
+            repository as a Copilot App Project, and start a session there. The extension in{' '}
+            <code>.github/extensions/monas-octoverse-arcade-starter/</code> is discovered from the project. Ask{' '}
             <em>“Open the Mona's Octoverse Arcade starter canvas.”</em> Its welcome screen and button confirm the
             canvas is running; it contains no finished game. Then build in <code>game.html</code>, keeping the
-            registration in <code>extension.mjs</code>. Use HTML, CSS, and vanilla JavaScript with no external build
-            step, so your team can focus on the game rather than wiring up the canvas.
+            registration in <code>extension.mjs</code>. Use HTML, CSS, and vanilla JavaScript. Keep the game
+            self-contained: no package manifest, dependencies, external assets, or external build step.
           </p>
         </div>
+        <p class="section-followup"><strong>Loading is the setup step:</strong> opening your team's repository
+          as a Project loads the included project-scoped extension. You do not need a separate starter download
+          or to reinstall it for the demo. The installation options above are for trying the extension in another
+          environment.</p>
       </div>
     </section>
 
@@ -312,6 +355,8 @@ const themes = [
       <div class="container">
         <p class="kicker">04 · Timed agenda</p>
         <h2 id="agenda-title">Two hours, five phases</h2>
+        <p class="section-intro">All times below are elapsed from the start of the workshop, not times of day.
+          Install the app and log in before kickoff.</p>
         <ol class="timeline">
           {agenda.map((a) => (
             <li class="timeline-item" style={`--minutes:${a.minutes}`}>
@@ -334,8 +379,9 @@ const themes = [
         <p class="kicker">05 · Submit</p>
         <h2 id="submit-title">Submit in the challenge Discussion</h2>
         <p class="section-intro">
-          Before the workshop ends at 2:00, one teammate posts your team’s submission as a single comment in the
-          <a href="https://gh.io/dol-discussion">challenge Discussion</a>. Include:
+          Before the end of the <strong>two-hour workshop</strong>, one teammate posts your team’s submission as
+          a <strong>single comment</strong> in the <a href="https://gh.io/dol-discussion">challenge Discussion</a>.
+          Do not submit in a separate Discussion in your team's repository. Include:
         </p>
         <ol class="req-list submit-list">
           {submission.map((item, i) => (
@@ -348,6 +394,9 @@ const themes = [
             </li>
           ))}
         </ol>
+        <p class="section-followup">The repository must contain the version shown in your demo. Keep any lab
+          credentials out of your video and submission. Use the{' '}
+          <a href="https://gh.io/dol-discussion">submission template in the Discussion</a> to include all four items.</p>
       </div>
     </section>
 
