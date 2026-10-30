@@ -208,7 +208,10 @@ The page loads no remote images, fonts, or scripts at runtime. The only JavaScri
 │   └── speaker-demo-runbook.md # Speaker-only demo runbook (not published on the site)
 ├── package.json              # Scripts and the single dependency: astro
 ├── public/
-│   ├── favicon.svg           # Neutral arcade icon, not a mascot or GitHub logo
+│   ├── apple-touch-icon.png  # Supplied portrait, square crop, 180 px, opaque
+│   ├── favicon-16x16.png     # Supplied portrait, round crop, 16 px
+│   ├── favicon-32x32.png     # Supplied portrait, round crop, 32 px
+│   ├── favicon.ico           # Supplied portrait, round crop, 16, 32, and 48 px frames
 │   └── images/
 │       ├── dol-instructions.png # Supplied instructions QR code
 │       ├── dol-discussion.png   # Supplied Discussion QR code
