@@ -19,6 +19,7 @@ const nav = [
   { href: '#awards', label: 'Awards' },
   { href: '#principles', label: 'Principles' },
   { href: '#themes', label: 'Future ideas' },
+  { href: '#github-skills', label: 'GitHub Skills' },
 ];
 
 const workshopLinks = [
@@ -37,6 +38,11 @@ const workshopLinks = [
     text: 'Post your team’s submission and see the other teams’ games.',
   },
 ];
+
+const skillsLink = {
+  url: 'https://gh.io/gh-skills',
+  image: 'gh-skills.png',
+};
 
 const baseline = [
   'Mona collects green commit squares and dodges red bugs.',
@@ -511,7 +517,33 @@ const themes = [
       </div>
     </section>
 
-    <section class="section section-alt" aria-labelledby="arcade-showcase-title">
+    <section id="github-skills" class="section section-alt" aria-labelledby="github-skills-title">
+      <div class="container resource-grid">
+        <div>
+          <p class="kicker">10 · Keep learning</p>
+          <h2 id="github-skills-title">Learn by doing with GitHub Skills</h2>
+          <p class="section-intro">
+            GitHub Skills offers free, hands-on courses you complete in public GitHub repositories.
+            Follow step-by-step guidance and get automated feedback as you learn.
+          </p>
+        </div>
+        <a class="resource-link" href={skillsLink.url} aria-labelledby="skills-link-title">
+          <article class="card resource-card">
+            <img
+              src={`${base}images/${skillsLink.image}`}
+              width="800"
+              height="800"
+              loading="lazy"
+              alt={`QR code for ${skillsLink.url}`}
+            />
+            <h3 id="skills-link-title">Explore GitHub Skills</h3>
+            <span class="resource-url">{skillsLink.url.replace('https://', '')}</span>
+          </article>
+        </a>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="arcade-showcase-title">
       <div class="container">
         <p class="kicker">Built with imagination</p>
         <h2 id="arcade-showcase-title">One Mona. Endless possibilities.</h2>
