@@ -14,7 +14,7 @@ The site is only an attendee guide. It is not the game. Participants build the g
 
 The [challenge README](https://github.com/ghlearn/day-of-learning-challenge/blob/main/README.md) is the source of truth for the shared prompt and challenge rules. This attendee guide and the Discussion follow the same guidance.
 
-> **Note:** This is an independent workshop resource. It is **not** an official GitHub Universe or GitHub event website and is not endorsed by GitHub. GitHub, GitHub Copilot, and the Octocat are trademarks of GitHub, Inc. Supplied GitHub artwork is displayed unaltered. Universe event details within the artwork are not the workshop's event details. Public-facing mascot use requires approval from GitHub's Brand & Marketing Design team under the [mascot guidelines](https://brand.github.com/graphic-elements/mascots).
+> **Note:** This is an independent workshop resource. It is **not** an official GitHub event website and is not endorsed by GitHub. GitHub, GitHub Copilot, and the Octocat are trademarks of GitHub, Inc. Supplied GitHub artwork is displayed unaltered. Public-facing mascot use requires approval from GitHub's Brand & Marketing Design team under the [mascot guidelines](https://brand.github.com/graphic-elements/mascots).
 
 ---
 
@@ -208,8 +208,7 @@ The page loads no remote images, fonts, or scripts at runtime. The only JavaScri
 │       ├── dol-discussion.png   # Supplied Discussion QR code
 │       ├── arcade-hero.png   # Supplied Mona and green-block landscape
 │       ├── mona-clouds.png   # Supplied Mona and butterfly illustration
-│       ├── universe-2026.png # Supplied Universe event artwork, displayed intact
-│       ├── pattern-green-pink.png
+│       ├── pattern-green-pink.png # Not currently displayed
 │       ├── pattern-gold-orange.png
 │       └── hero-arcade.svg   # Previous artwork, no longer displayed
 └── src/
